@@ -1,0 +1,246 @@
+@import "variable.scss";
+aside {
+  position: relative;
+  padding: 20px;
+  max-width: 275px;
+  .btn-detail {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .service {
+    a {
+      color: $prtimes_black;
+    }
+    padding: 8px;
+    background-color: $page_color;
+    &__heading {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      &__item {
+        display: flex;
+        padding: 7px 0;
+        margin: 5px 0;
+        background-color: $white;
+        &__cover {
+          width: 40px;
+          height: 30px;
+        }
+        &__content {
+          padding-left: 10px;
+          .text-small {
+            font-size: 0.75rem;
+          }
+          .text-large {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    &__footer {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 2;
+      .text {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      .text-blue {
+        color: $search_btn_color;
+      }
+      .btn-detail {
+        margin: 5px 0;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .keyword {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    border-bottom: solid 1px $sitemap_color;
+    &__heading {
+      font-size: 1.1rem;
+    }
+    &__list {
+      &__item {
+        display: inline-block;
+        font-size: 0.8rem;
+        background-color: $page_color;
+        padding: 5px;
+        border-radius: 50px;
+        margin-bottom: 5px;
+        a {
+          color: black;
+        }
+        &:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .story,
+  .magazine,
+  .tv {
+    background-color: $page_color;
+    padding: 20px 10px;
+    margin: 15px 0;
+  }
+  .category {
+    &__heading {
+      font-size: 1.1rem;
+      padding: 10px 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      &__item {
+        font-size: 0.85rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: solid 1px $page_color;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .story {
+    &__heading {
+      margin: 5px 0;
+      img {
+        width: 130px;
+      }
+      text-align: center;
+    }
+    &__content {
+      &__cover:hover + .story__content__body {
+        color: $text_color;
+      }
+      &__cover {
+        cursor: pointer;
+        width: 215px;
+      }
+      &__body {
+        font-weight: bold;
+        padding: 5px 0;
+        &:hover {
+          cursor: pointer;
+          color: $text_color;
+        }
+      }
+      &__stamp {
+        font-size: 0.75rem;
+        color: $sitemap_color;
+      }
+    }
+  }
+  .magazine {
+    &__heading {
+      margin: 5px 0;
+      img {
+        width: 150px;
+        height: 30px;
+      }
+      text-align: center;
+    }
+    &__content {
+      &__cover:hover + .magazine__content__body {
+        color: $text_color;
+      }
+      &__cover {
+        cursor: pointer;
+        width: 215px;
+      }
+      &__body {
+        font-weight: bold;
+        padding: 5px 0;
+        &:hover {
+          cursor: pointer;
+          color: $text_color;
+        }
+      }
+      &__stamp {
+        font-size: 0.75rem;
+        color: $sitemap_color;
+      }
+    }
+  }
+  .tv {
+    &__heading {
+      margin: 5px 0;
+      img {
+        width: 150px;
+        height: 30px;
+      }
+      text-align: center;
+    }
+    &__content {
+      &__cover:hover + .tv__content__body {
+        color: $text_color;
+      }
+      &__cover {
+        width: 215px;
+        cursor: pointer;
+      }
+      &__body {
+        font-weight: bold;
+        padding: 5px 0;
+        cursor: pointer;
+        &:hover{
+          color: $text_color;
+        }
+      }
+      &__stamp {
+        font-size: 0.75rem;
+        color: $sitemap_color;
+      }
+    }
+  }
+  .live {
+    &__heading {
+      text-align: center;
+      margin: 5px 0;
+    }
+    &__content {
+      .heading {
+        font-size: 1.1rem;
+      }
+      .content-list {
+        display: flex;
+        &__item {
+          display: flex;
+          justify-content: space-between;
+          line-height: 1.5;
+          .datetime {
+            margin-right: 15px;
+            .date {
+              color: $text_color;
+            }
+            .time {
+              font-size: 0.75rem;
+            }
+          }
+          .content {
+            font-size: 0.9rem;
+            .presenter {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

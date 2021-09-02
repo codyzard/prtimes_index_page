@@ -1,0 +1,114 @@
+@import "variable.scss";
+.header {
+  .top-header {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: $prtimes_color;
+    padding: 10px 0;
+    color: $white;
+    font-size: 0.8rem;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      margin-right: 50px;
+      .info {
+        display: flex;
+        img {
+          width: 100px;
+        }
+        &__description {
+          margin: auto 10px;
+          color: $header_font_color;
+          ins {
+            text-decoration: none;
+          }
+        }
+      }
+      .service {
+        &__list {
+          margin-top: 5px;
+          display: flex;
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      .admin {
+        &__list {
+          display: flex;
+          background-color: $header_bg_admin_color;
+          margin-right: 8px;
+          padding: 3px 10px;
+          border-radius: 3px;
+          &__item {
+            display: inline-block;
+            a {
+              color: white;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .form-search {
+        position: relative;
+        input {
+          position: relative;
+          border-radius: 3px;
+          width: 200px;
+          height: 20px;
+          background: white;
+          border: none;
+          text-indent: 10px;
+          &::placeholder {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .bottom-header {
+    background-color: $white;
+    .pc-menu {
+      display: flex;
+      justify-content: center;
+      font-size: 0.75rem;
+      &__item {
+        display: inline-block;
+        padding: 8px 8px;
+        a {
+          color: $prtimes_color;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .top-header {
+      font-size: 0.7rem;
+      padding: 10px 20px;
+      &__left {
+        margin-right: 5px;
+      }
+      &__right {
+        .form-search {
+          input {
+            width: 120px;
+            text-indent: 5px;
+            &::placeholder {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

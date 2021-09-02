@@ -1,0 +1,43 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 1%;
+  padding-bottom: 0;
+  line-height: 2.5;
+  max-width: 950px;
+  margin: auto; }
+  footer .top-footer {
+    display: grid;
+    grid-template-columns: 23% 46% 18%;
+    column-gap: 6%;
+    border-bottom: solid 1px #bfc9d7;
+    padding-bottom: 2.5%;
+    margin-bottom: 10px; }
+    footer .top-footer .recommend-service {
+      display: flex;
+      justify-content: space-between; }
+      footer .top-footer .recommend-service .col-2 {
+        margin-top: 30px; }
+    footer .top-footer .sns .footer-menu__item.category {
+      border-bottom: solid 1px #bfc9d7;
+      padding-bottom: 2px; }
+    footer .top-footer .sns .footer-menu__item a {
+      display: flex;
+      justify-content: space-between; }
+      footer .top-footer .sns .footer-menu__item a i {
+        margin: auto 0; }
+  footer .bottom-footer .footer-term {
+    display: flex;
+    flex-direction: column; }
+    footer .bottom-footer .footer-term__list {
+      font-size: 0.8rem;
+      display: flex; }
+      footer .bottom-footer .footer-term__list__item:not(:last-child) {
+        margin-right: 30px; }
+  footer .footer-heading {
+    font-size: 1rem;
+    font-weight: 500; }
+  footer .footer-menu__item {
+    font-size: 0.8rem; }
+
+/*# sourceMappingURL=footer.css.map */

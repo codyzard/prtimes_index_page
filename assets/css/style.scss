@@ -1,0 +1,79 @@
+@import "variable.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 12px;
+  background-color: $page_color;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-item {
+  &:not(:last-child) {
+    border-right: 1px solid $header_font_color;
+    padding-right: 10px;
+  }
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+  a {
+    color: $header_font_color;
+    display: inline-block;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.active-item a {
+  color: $white;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: $search_btn_color;
+  &:hover {
+    cursor: pointer;
+  }
+  i {
+    color: $white;
+  }
+}
+
+.btn-detail {
+  margin-left: 30px;
+  position: static;
+  width: 90px;
+  height: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 3px;
+  a {
+    color: $white;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+}
+@import "header.scss";
+@import "container.scss";
+@import "footer.scss";

@@ -1,0 +1,17 @@
+@import "articles.scss";
+@import "sidebar.scss";
+@import "variable.scss";
+.main-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+  padding: 20px;
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .main-body{
+    padding: 10px;
+  }
+}
